@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Food</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Place Your Order</h1>
+    <h2>Foods</h2>
+    <form id="orderForm">
+
+      <!-- Burger Section -->
+      <div class="item">
+        <label for="burger">Burger:</label>
+        <select id="burger" name="burger">
+          <option value="0">Select a burger</option>
+          <option value="500">Chicken Burger (500.00)</option>
+          <option value="450">Cheese Burger (450.00)</option>
+          <option value="600">Beef Burger (600.00)</option>
+          <option value="400">Vegetable Burger (400.00)</option>
+        </select>
+        <label for="burgerQty">Quantity:</label>
+        <input type="number" id="burgerQty" name="burgerQty" min="0" value="0">
+      </div>
+
+      
+      <!-- Pizza Section -->
+      <div class="item">
+        <label for="pizza">Pizza:</label>
+        <select id="pizza" name="pizza">
+          <option value="0">Select a pizza</option>
+          <option value="1500">Chicken Pizza (1500.00)</option>
+          <option value="1450">Cheese Pizza (1450.00)</option>
+          <option value="1600">Beef Pizza (1600.00)</option>
+          <option value="1400">Vegetable Pizza (1400.00)</option>
+        </select>
+        <label for="pizzaQty">Quantity:</label>
+        <input type="number" id="pizzaQty" name="pizzaQty" min="0" value="0">
+      </div>
+
+      
+      <!-- Biriyani Section -->
+      <div class="item">
+        <label for="biriyani">Biriyani:</label>
+        <select id="biriyani" name="biriyani">
+          <option value="0">Select a biriyani</option>
+          <option value="750">Chicken Biriyani (750.00)</option>
+          <option value="950">Mutton Biriyani (950.00)</option>
+          <option value="850">Beef Biriyani (850.00)</option>
+          <option value="600">Vegetable Biriyani (600.00)</option>
+        </select>
+        <label for="biriyaniQty">Quantity:</label>
+        <input type="number" id="biriyaniQty" name="biriyaniQty" min="0" value="0">
+      </div>
+
+      
+        <!-- sandwitch Section -->
+        <div class="item">
+            <label for="sandwich">Sandwich:</label>
+            <select id="sandwich" name="sandwich">
+              <option value="0">Select a sandwich</option>
+              <option value="350">Chicken Sandwich (350.00)</option>
+              <option value="300">Cheese Sandwich (300.00)</option>
+              <option value="400">Beef Sandwich (400.00)</option>
+              <option value="300">Vegetable Sandwich (300.00)</option>
+            </select>
+            <label for="sandwichQty">Quantity:</label>
+            <input type="number" id="sandwichQty" name="sandwichQty" min="0" value="0">
+          </div>
+
+         <!-- Pani Poori Section -->
+<div class="item">
+  <label for="paniPoori">Pani Poori (200.00):</label>
+  <input type="number" id="paniPoori" name="paniPooriQty" min="0" value="0">
+</div>
+
+
+       <!-- Naan with Chicken Gravy Section -->
+<div class="item">
+    <label for="naanChickenGravy">Naan with Chicken Gravy (800.00):</label>
+    <input type="number" id="naanChickenGravy" name="naanChickenGravyQty" min="0" value="0">
+  </div>
+  
+<!-- Killi Parota Section -->
+<div class="item">
+    <label for="killiParota">Killi Parota (500.00):</label>
+    <input type="number" id="killiParota" name="killiParotaQty" min="0" value="0">
+  </div>
+  
+  <!-- Fries Section -->
+  <div class="item">
+    <label for="fries">Fries (300.00):</label>
+    <input type="number" id="fries" name="friesQty" min="0" value="0">
+  </div>
+  
+  <!-- White Sauce Pasta Section -->
+  <div class="item">
+    <label for="whiteSaucePasta">White Sauce Pasta (400.00):</label>
+    <input type="number" id="whiteSaucePasta" name="whiteSaucePastaQty" min="0" value="0">
+  </div>
+  
+  <!-- Kothu Parota Section -->
+  <div class="item">
+    <label for="kothuParota">Kothu Parota (800.00):</label>
+    <input type="number" id="kothuParota" name="kothuParotaQty" min="0" value="0">
+  </div>
+  
+  <!-- Sea Food Mix Rice Section -->
+  <div class="item">
+    <label for="seaFoodMixRice">Sea Food Mix Rice (1000.00):</label>
+    <input type="number" id="seaFoodMixRice" name="seaFoodMixRiceQty" min="0" value="0">
+  </div>
+  
+
+<!-- Desserts Section -->
+<h3>Desserts</h3>
+
+<!-- Cake Section -->
+<div class="item">
+  <label for="cake">Cake:</label>
+  <select id="cake" name="cake">
+    <option value="0">Select a cake</option>
+    <option value="250">Vanilla Cake (250.00)</option>
+    <option value="300">Strawberry Cake (300.00)</option>
+    <option value="350">Chocolate Cake (350.00)</option>
+    <option value="400">Fruit and Nuts Cake (400.00)</option>
+  </select>
+  <label for="cakeQty">Quantity:</label>
+  <input type="number" id="cakeQty" name="cakeQty" min="0" value="0">
+</div>
+
+<!-- Ice Cream Section -->
+<div class="item">
+  <label for="iceCream">Ice Cream Sundae:</label>
+  <select id="iceCream" name="iceCream">
+    <option value="0">Select an ice cream</option>
+    <option value="250">Vanilla Ice Cream (250.00)</option>
+    <option value="300">Strawberry Ice Cream (300.00)</option>
+    <option value="350">Chocolate Ice Cream (350.00)</option>
+    <option value="400">Fruit and Nuts Ice Cream (400.00)</option>
+  </select>
+  <label for="iceCreamQty">Quantity:</label>
+  <input type="number" id="iceCreamQty" name="iceCreamQty" min="0" value="0">
+</div>
+
+<!-- Cake with Syrup Section -->
+<div class="item">
+  <label for="cakeWithSyrup">Cake with Syrup (300.00):</label>
+  <input type="number" id="cakeWithSyrup" name="cakeWithSyrup" min="0" value="0">
+</div>
+
+<!-- Biscuit Cake Section -->
+<div class="item">
+  <label for="biscuitCake">Biscuit Cake (250.00):</label>
+  <input type="number" id="biscuitCake" name="biscuitCake" min="0" value="0">
+</div>
+
+<!-- Gulab Jamun Section -->
+<div class="item">
+  <label for="gulabJamun">Gulab Jamun (200.00):</label>
+  <input type="number" id="gulabJamun" name="gulabJamun" min="0" value="0">
+</div>
+
+<!-- Payasam Section -->
+<div class="item">
+  <label for="payasam">Payasam (200.00):</label>
+  <input type="number" id="payasam" name="payasam" min="0" value="0">
+</div>
+
+<!-- Pudding Section -->
+<div class="item">
+  <label for="pudding">Pudding (250.00):</label>
+  <input type="number" id="pudding" name="pudding" min="0" value="0">
+</div>
+
+<!-- Brownies Section -->
+<div class="item">
+  <label for="brownies">Brownies (300.00):</label>
+  <input type="number" id="brownies" name="brownies" min="0" value="0">
+</div>
+
+<!-- Layered Jelly Section -->
+<div class="item">
+  <label for="layeredJelly">Layered Jelly (280.00):</label>
+  <input type="number" id="layeredJelly" name="layeredJelly" min="0" value="0">
+</div>
+
+<!-- Cake Pudding Section -->
+<div class="item">
+  <label for="cakePudding">Cake Pudding (200.00):</label>
+  <input type="number" id="cakePudding" name="cakePudding" min="0" value="0">
+</div>
+
+<!-- Banana Split Section -->
+<div class="item">
+  <label for="bananaSplit">Banana Split (400.00):</label>
+  <input type="number" id="bananaSplit" name="bananaSplit" min="0" value="0">
+</div>
+
+<!-- Fanpop Section -->
+<div class="item">
+  <label for="fanpop">Fanpop (200.00):</label>
+  <input type="number" id="fanpop" name="fanpop" min="0" value="0">
+</div>
+
+
+<!-- Drinks Section -->
+
+<!-- Milkshake Section -->
+<div class="item">
+    <label for="milkshake">Milkshake:</label>
+    <select id="milkshake" name="milkshake">
+      <option value="0">Select a milkshake</option>
+      <option value="250">Vanilla Milkshake (250.00)</option>
+      <option value="300">Strawberry Milkshake (300.00)</option>
+      <option value="350">Chocolate Milkshake (350.00)</option>
+      <option value="400">Fruit and Nuts Milkshake (400.00)</option>
+    </select>
+    <label for="milkshakeQty">Quantity:</label>
+    <input type="number" id="milkshakeQty" name="milkshakeQty" min="0" value="0">
+  </div>
+  
+  <!-- Soda Bottles Section -->
+  <div class="item">
+    <label for="sodaBottles">Soda Bottles:</label>
+    <select id="sodaBottles" name="sodaBottles">
+      <option value="0">Select a soda bottle</option>
+      <option value="100">Fanta (100.00)</option>
+      <option value="100">Coca-Cola (100.00)</option>
+      <option value="100">7Up (100.00)</option>
+      <option value="100">Pepsi (100.00)</option>
+    </select>
+    <label for="sodaBottlesQty">Quantity:</label>
+    <input type="number" id="sodaBottlesQty" name="sodaBottlesQty" min="0" value="0">
+  </div>
+  
+  <!-- Fruit Juice Section -->
+  <div class="item">
+    <label for="fruitJuice">Fruit Juice:</label>
+    <select id="fruitJuice" name="fruitJuice">
+      <option value="0">Select a juice</option>
+      <option value="250">Apple Juice (250.00)</option>
+      <option value="300">Blueberry Juice (300.00)</option>
+      <option value="200">Papaya Juice (200.00)</option>
+      <option value="300">Orange Juice (300.00)</option>
+    </select>
+    <label for="fruitJuiceQty">Quantity:</label>
+    <input type="number" id="fruitJuiceQty" name="fruitJuiceQty" min="0" value="0">
+  </div>
+  
+  <!-- Energy Drink Section -->
+  <div class="item">
+    <label for="energyDrink">Energy Drink (200.00):</label>
+    <input type="number" id="energyDrinkQty" name="energyDrinkQty" min="0" value="0">
+  </div>
+  
+  <!-- Herb Drink Section -->
+  <div class="item">
+    <label for="herbDrink">Herb Drink:</label>
+    <select id="herbDrink" name="herbDrink">
+      <option value="0">Select a herb drink</option>
+      <option value="150">Chamomile Tea (150.00)</option>
+      <option value="150">Ginger Tea (150.00)</option>
+      <option value="150">Hibiscus Tea (150.00)</option>
+      <option value="100">Mint Tea (100.00)</option>
+    </select>
+    <label for="herbDrinkQty">Quantity:</label>
+    <input type="number" id="herbDrinkQty" name="herbDrinkQty" min="0" value="0">
+  </div>
+  
+  <!-- Coffee Section -->
+  <div class="item">
+    <label for="coffee">Coffee (200.00):</label>
+    <input type="number" id="coffeeQty" name="coffeeQty" min="0" value="0">
+  </div>
+  
+  <!-- Tea Section -->
+  <div class="item">
+    <label for="tea">Tea (100.00):</label>
+    <input type="number" id="teaQty" name="teaQty" min="0" value="0">
+  </div>
+  
+  <!-- Instant Tea Section -->
+  <div class="item">
+    <label for="instantTea">Instant Tea:</label>
+    <select id="instantTea" name="instantTea">
+      <option value="0">Select an instant tea</option>
+      <option value="100">Nescafe (100.00)</option>
+      <option value="80">Nestea (80.00)</option>
+    </select>
+    <label for="instantTeaQty">Quantity:</label>
+    <input type="number" id="instantTeaQty" name="instantTeaQty" min="0" value="0">
+  </div>
+  
+      <!-- Total Section -->
+      <div class="total" id="totalAmount">Total:0</div>
+      <button type="button" id="calculateBtn">Calculate Total</button>
+    </form>
+  </div>
+  <script src="order.js"></script>
+</body>
+</html>

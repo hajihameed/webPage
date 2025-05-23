@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Website</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        window.onload = function () {
+            const userRole = sessionStorage.getItem('userRole'); // Get the user role from session storage
+            const adminIcon = document.getElementById('adminIcon'); // Admin icon element
+
+            // Hide the admin icon by default
+            adminIcon.style.display = 'none';
+
+            // Show admin icon only if the userRole is 'admin'
+            if (userRole === 'admin') {
+                adminIcon.style.display = 'inline-block';
+            }
+        };
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.webp" alt="Foodie Logo" class="logo-img"> Foodie
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#dessert">Dessert</a></li>
+                <li>
+                    <a href="Login.html">Login</a>
+                    <!-- Admin Icon -->
+                    <a href="admin.html" id="adminIcon" class="admin-icon-link" style="display: none;">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Delicious Food Delivered To You</h1>
+            <p>Order your favourite food  in just a few clicks.
+                <br> you can Order your food between 4.00 pm- 9.00pm and conform your order before a half an hour 
+            </p>
+
+            <img src="background.jpg" alt="Restaurant 1">
+            
+        </div>
+    </section>
+<!-- About Us Section -->
+<section id="about" class="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>Foodie</strong>, your ultimate destination for a delightful food ordering experience.</p>
+    <p>We bring a world of flavors to your fingertips, allowing you to explore and enjoy delicious dishes from the best local restaurants in the comfort of your home. Our platform is designed with a simple mission: to make food ordering easy, fast, and enjoyable for everyone.</p>
+    <p>At <strong>Foodie</strong>, we are passionate about connecting food lovers with their favorite cuisines, from timeless classics to exotic dishes. We carefully select restaurant partners who share our commitment to quality, taste, and excellent service. Whether you're craving a quick snack, a hearty meal, or a sweet dessert, our platform makes it easy to browse, order, and enjoy.</p>
+    <p>We aim to be more than just a food delivery service—we strive to create a community of food enthusiasts who value convenience and quality. Our team is constantly working to enhance your experience, incorporating new features and offerings to make every order special.</p>
+</section>
+
+    <!-- Featured Restaurants Section -->
+    <!-- Featured Restaurants Section -->
+<!-- Featured Restaurants Section -->
+<section id="food"  class="featured">
+    <h2>Delicious Foods</h2>
+    <div class="featured-items">
+        <div class="featured-item">
+            <img src="food1.jpg" alt="Restaurant 1">
+            <h3>Burger</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="food2.jpg" alt="Restaurant 2">
+            <h3> Shawarma</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="food3.jpg" alt="Restaurant 3">
+            <h3>Biriyani</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="food4.jpg" alt="Restaurant 4">
+            <h3>Pizza</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="food5.jpg" alt="Restaurant 5">
+            <h3>Sandwich</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="food6.jpg" alt="Restaurant 6">
+            <h3>Pani Poori</h3>
+            
+        </div>
+        <div class="featured-item">
+            <img src="food7.jpg" alt="Restaurant 5">
+            <h3>naan with chicken gravey</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="food8.jpg" alt="Restaurant 5">
+            <h3>killi barota</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="food9.jpg" alt="Restaurant 5">
+            <h3>fench fry</h3>
+            
+        </div>
+        <div class="featured-item">
+            <img src="food10.jpg" alt="Restaurant 5">
+            <h3>white source pastha</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="food11.jpg" alt="Restaurant 5">
+            <h3>kothu parota</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="food12.jpg" alt="Restaurant 5">
+            <h3>sea food mix rice</h3>
+           
+        </div>
+    </div>
+    
+</section>
+
+<!-- Dessert Items Section -->
+<section id="dessert" class="featured">
+    <h2>Dessert Items</h2>
+    <div class="featured-items">
+        <div class="featured-item">
+            <img src="desert1.jpg" alt="Dessert 1">
+            <h3> Cake</h3>
+            
+        </div>
+        <div class="featured-item">
+            <img src="desert2.jpg" alt="Dessert 2">
+            <h3>Ice Cream Sundae</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="desert3.png" alt="Dessert 3">
+            <h3> cake with syrap</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="desert4.jpg" alt="Dessert 4">
+            <h3>biscult cake</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="desert5.jpg" alt="Dessert 5">
+            <h3>Gulab jamun</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="desert6.jpg" alt="Dessert 6">
+            <h3>Payasam</h3>
+            
+        </div>
+        <div class="featured-item">
+            <img src="desert7.jpg" alt="Dessert 6">
+            <h3>pudding</h3>
+            
+        </div>
+        <div class="featured-item">
+            <img src="desert8.jpg" alt="Dessert 6">
+            <h3>Brownies</h3>
+            
+            </div>
+        <div class="featured-item">
+            <img src="desert9.jpg" alt="Dessert 6">
+            <h3>layered jelly</h3>
+           
+        </div>
+            <div class="featured-item">
+                <img src="desert10.jpg" alt="Dessert 6">
+                <h3>Cake pudding</h3>
+               
+                </div>
+                <div class="featured-item">
+                    <img src="desert11.jpg" alt="Dessert 6">
+                    <h3>Banana split</h3>
+                    
+                    </div>
+                    <div class="featured-item">
+                        <img src="desert12.jpg" alt="Dessert 6">
+                        <h3>fanpop</h3>
+                        
+                        </div>
+    </div>
+    
+</section>
+<section id="drinks" class="featured">
+    <h2>Drinks Items</h2>
+    <div class="featured-items">
+        <div class="featured-item">
+            <img src="drink1.jpg" alt="Milkshakes">
+            <h3>Milkshakes</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="drink2.jpg" alt="Soda Bottles">
+            <h3>Soda Bottles</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="drink3.jpg" alt="Fruit Juice">
+            <h3>Fruit Juice</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="drink4.jpg" alt="Energy Drinks">
+            <h3>Energy Drinks</h3>
+            
+        </div>
+        <div class="featured-item">
+            <img src="drink5.jpg" alt="Herb Drinks">
+            <h3>Herb Drinks</h3>
+            
+        </div>
+        <div class="featured-item">
+            <img src="drink6.jpg" alt="Coffee">
+            <h3>Coffee</h3>
+            
+        </div>
+        <div class="featured-item">
+            <img src="drink7.jpg" alt="Tea">
+            <h3>Tea</h3>
+           
+        </div>
+        <div class="featured-item">
+            <img src="drink8.jpg" alt="Instant Tea">
+            <h3>Instant Tea</h3>
+           
+        </div>
+        
+        <button id="orderNowBtn">Order Now</button>
+
+    </div>
+</section>
+<script src="home.js"></script>
+                                   
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                
+                <p>Serving happiness on your plate!</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Food Street, Flavortown</p>
+                <p><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fa-solid fa-envelope"></i> contact@foodie.com</p>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <p>Follow Us</p>
+            <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        
+        <p>&copy; 2024 Foodie. Crafted with ❤️ for food lovers.</p>
+    </div>
+</footer>
+
